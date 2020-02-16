@@ -58,7 +58,11 @@ protected:
 	///@param data the rgb data to write out to the strip
 	///@param nLeds the number of leds being written out
 	///@param scale the rgb scaling to apply to each led before writing it out
-    virtual void show(const struct CRGB *data, int nLeds, CRGB scale) = 0;
+     virtual void show(const struct CRGB *data, int nLeds, CRGB scale) = 0;
+
+    /// Once we know the number of LED's, we can init any underlying buffers
+    /// used for DMA or such
+    virtual void initLedBuffers() {}
 
 public:
 	/// create an led controller object, add it to the chain of controllers
