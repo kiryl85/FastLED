@@ -108,6 +108,7 @@ public:
     CLEDController & setLeds(CRGB *data, int nLeds) {
         m_Data = data;
         m_nLeds = nLeds;
+        initLedBuffers(); 
         return *this;
     }
 
