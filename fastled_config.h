@@ -61,6 +61,9 @@
 #define FASTLED_INTERRUPT_RETRY_COUNT 2
 #endif
 
+// Use this to add RGBW support to the clockless ESP8266 driver
+// #define FASTLED_RGBW 
+
 // Use this toggle to enable global brightness in contollers that support is (ADA102 and SK9822).
 // It changes how color scaling works and uses global brightness before scaling down color values.
 // This enable much more accurate color control on low brightness settings.
