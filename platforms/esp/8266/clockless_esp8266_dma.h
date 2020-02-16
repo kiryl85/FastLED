@@ -35,8 +35,6 @@ extern "C"
 #include "osapi.h"
 #include "ets_sys.h"
 #include "user_interface.h"
-
-void rom_i2c_writeReg_Mask(uint32_t block, uint32_t host_id, uint32_t reg_add, uint32_t Msb, uint32_t Lsb, uint32_t indata);
 }
 
 struct slc_queue_item
